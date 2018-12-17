@@ -142,7 +142,7 @@ function setColors(currenciesID) {
 function createURL(dates, currencyID) { //create URL for API
 	let startDate = dates[0];
 	let endDate = dates[1];
-	let url = `http://www.nbrb.by/API/ExRates/Rates/Dynamics/${currencyID}?startDate=${startDate}&endDate=${endDate}`;
+	let url = `https://www.nbrb.by/API/ExRates/Rates/Dynamics/${currencyID}?startDate=${startDate}&endDate=${endDate}`;
 	return url;
 }
 
