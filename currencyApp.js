@@ -281,13 +281,13 @@ function drawLegendColor(color, number) {
 function drawLegendText(currencyID, number) {
 	switch (currencyID) {
 		case "145":
-			canvas.fillText("USD", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
+			canvas.fillText("1 USD", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
 			break;
 		case "292":
-			canvas.fillText("EUR", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
+			canvas.fillText("1 EUR", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
 			break;
 		case "298":
-			canvas.fillText("RUB", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
+			canvas.fillText("100 RUB", width / 2 + 40, height + y0 + 30 + number * 20 + 5);
 			break;
 	}
 }
