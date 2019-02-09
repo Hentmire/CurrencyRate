@@ -105,7 +105,8 @@ function drawCoordinateAxis() { //draw coordinate axis for graph
 function getDates() { //set period for which data is needed
 	let dates = [];
 	if (document.querySelector('.first-date').value) {
-		if ( (+document.querySelector('.first-date').value.slice(-2) < +document.querySelector('.second-date').value.slice(-2)) || (+document.querySelector('.first-date').value.slice(-2) === +document.querySelector('.second-date').value.slice(-2) && (+document.querySelector('.first-date').value.slice(0, 2) < +document.querySelector('.second-date').value.slice(0, 2)) ) && ( document.querySelector('.second-date').value.slice(-2) ===  mm && +document.querySelector('.second-date').value.slice(0, 2) <= +dd) ) {
+		if ( (+document.querySelector('.first-date').value.slice(-2) < +document.querySelector('.second-date').value.slice(-2)) 
+		|| (+document.querySelector('.first-date').value.slice(-2) === +document.querySelector('.second-date').value.slice(-2) && (+document.querySelector('.first-date').value.slice(0, 2) < +document.querySelector('.second-date').value.slice(0, 2)) ) && ( document.querySelector('.second-date').value.slice(-2) ===  mm && +document.querySelector('.second-date').value.slice(0, 2) <= +dd) ) {
 			let firstDate = document.querySelector('.first-date').value;
 			let secondDate =  document.querySelector('.second-date').value;
 			dates = [`2018-${firstDate.slice(-2)}-${firstDate.slice(0, 2)}`, `2018-${secondDate.slice(-2)}-${secondDate.slice(0, 2)}`];
